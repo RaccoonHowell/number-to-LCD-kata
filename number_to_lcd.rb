@@ -1,5 +1,5 @@
 class Converter
     def convert number
-        " \n| \n| "
+        "  \n| \n| "
     end
 end
