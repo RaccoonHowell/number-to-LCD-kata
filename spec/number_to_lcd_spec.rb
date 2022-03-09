@@ -5,19 +5,14 @@ describe Converter do
         @converter = described_class.new
     end
 
-    it "returns LCD style 1 when called with 1" do
-        expect(@converter.convert(1)).to eq("  \n| \n| ")
+    def self.test_convert(number, lcd)
+        it "turns #{number} into #{lcd}" do
+            expect(@converter.convert(number)).to eq(lcd)
+        end
     end
 
-    it "returns LCD style 2 when called with 2" do
-        expect(@converter.convert(2)).to eq(" - \n _|\n|_ ")
-    end
-
-    it "returns LCD style 3 when called with 3" do
-        expect(@converter.convert(3)).to eq(" - \n _|\n _|")
-    end
-
-    it "returns LCD style 4 when called with 4" do
-        expect(@converter.convert(4)).to eq("   \n|_|\n  |")
-    end
+    test_convert(1, "  \n| \n| ")
+    test_convert(2, " - \n _|\n|_ ")
+    test_convert(3, " - \n _|\n _|")
+    test_convert(4, "   \n|_|\n  |")
 end
