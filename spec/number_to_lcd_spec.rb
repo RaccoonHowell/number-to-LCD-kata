@@ -12,4 +12,8 @@ describe Converter do
     it "returns LCD style 2 when called with 2" do
         expect(@converter.convert(2)).to eq(" - \n _|\n|_ ")
     end
+
+    it "returns LCD style 3 when called with 3" do
+        expect(@converter.convert(3)).to eq(" - \n _|\n _|")
+    end
 end
