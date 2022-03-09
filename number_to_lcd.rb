@@ -1,6 +1,7 @@
 class Converter
     def convert number
         lcd_numbers = {
+            0 => " - \n| |\n|_|",
             1 => "  \n| \n| ",
             2 => " - \n _|\n|_ ",
             3 => " - \n _|\n _|",
