@@ -15,4 +15,5 @@ describe Converter do
     test_convert(2, " - \n _|\n|_ ")
     test_convert(3, " - \n _|\n _|")
     test_convert(4, "   \n|_|\n  |")
+    test_convert(5, " - \n|_ \n _|")
 end
