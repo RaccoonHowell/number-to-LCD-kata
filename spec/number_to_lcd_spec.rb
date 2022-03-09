@@ -11,6 +11,7 @@ describe Converter do
         end
     end
 
+    test_convert(0, " - \n| |\n|_|")
     test_convert(1, "  \n| \n| ")
     test_convert(2, " - \n _|\n|_ ")
     test_convert(3, " - \n _|\n _|")
