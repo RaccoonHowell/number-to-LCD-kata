@@ -8,7 +8,7 @@ class Converter
             5 => " - \n|_ \n _|",
             6 => " - \n|_ \n|_|"
         }
-        
+
         lcd_numbers[number]
     end
 end
